@@ -1,0 +1,14 @@
+# Commands to check install of CD agent and logs of EC2 user-data
+
+user-data log file:
+    /var/log/cloud-init-output.log
+
+log file of cd agent:
+    sudo service codedeploy-agent stop
+    /opt/codedeploy-agent/deployment-root
+    sudo service codedeploy-agent start
+    cat /var/log/aws/codedeploy-agent/codedeploy-agent.log
+
+sudo service codedeploy-agent status
+sudo service codedeploy-agent start
+sudo service codedeploy-agent stop
